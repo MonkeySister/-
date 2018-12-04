@@ -1,0 +1,1161 @@
+body {
+	min-width: 1000px;
+	background-color: #000000;
+	/*隐藏测导航*/
+	overflow: hidden;
+	position: relative;
+}
+
+
+/*页面布局*/
+
+.wrap {
+	width: 100%;
+	position: relative;
+	top: 0;
+	transition: all .6s ease-out 0s;
+}
+
+.parts {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+
+/*精灵图1使用者*/
+
+.top-li01-img,
+.top-mes02>i {
+	display: inline-block;
+	background-image: url(../images/gameFeatureImgs/ost-bg.png);
+	background-repeat: no-repeat;
+}
+
+
+/*精灵图2*/
+
+.logo-txt,
+.logo-h,
+.mouse-down {
+	background-image: url(../images/gameFeatureImgs/f-spr.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+
+/*精灵图h2*/
+
+.scene-h2,
+.figure-h2,
+.story-h2,
+.fighting-h2,
+.school-h2,
+.ally-h2,
+.identity-h2 {
+	background-image: url(../images/gameFeatureImgs/h2.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.prev,
+.next,
+.scene-words,
+.figure-words,
+.school-words,
+.school-tab>a,
+.identity-tab>a {
+	background-image: url(../images/gameFeatureImgs/icon.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.w1000 {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.contain {
+	position: relative;
+	text-align: center;
+	height: 100%;
+}
+
+
+/*第一部分*/
+
+.head {
+	background-image: url(../images/gameFeatureImgs/bg-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.logo-txt {
+	width: 145px;
+	height: 51px;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	background-position: 0 -340px;
+}
+
+.logo-h {
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 682px;
+	height: 333px;
+	background-position: 0 0;
+}
+
+.mouse-down {
+	display: block;
+	position: relative;
+	width: 90px;
+	height: 180px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background-position: -2px -425px;
+	/*animation: move 3s infinite;
+	 * -moz-animation: move 3s infinite;*/
+	 */
+	-webkit-animation: move 2.3s infinite;
+	animation: move 2.3s infinite;
+}
+
+@keyframes move{
+0%,100%,70%{transform:translate(0,0);}
+20%,40%,60%{transform:translate(0,15px);}
+30%{transform:translate(0,7px);}
+}
+/*第二部分*/
+
+.scene {
+	background-color: #496f94;
+	background-image: url(../images/gameFeatureImgs/bg-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.scene-h2 {
+	width: 906px;
+	height: 80px;
+}
+
+.scene-subhead,
+.fighting-subhead,
+.ally-subhead,
+.identity-subhead {
+	width: 100%;
+	height: 21px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.scene-imgs {
+	width: 479px;
+	height: 478px;
+	margin-top: 75px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+.scene-img-list {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 478px;
+	width: 6227px;
+	transition: 0s;
+}
+
+.scene-img-list>li {
+	width: 479px;
+	height: 478px;
+	float: left;
+}
+
+.prev,
+.next {
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	bottom: 40px;
+}
+
+.prev {
+	background-position: 0 0;
+	left: 160px;
+}
+
+.next {
+	background-position: -123px 0;
+	right: 160px;
+}
+
+.scene-words {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 340px;
+	height: 304px;
+	background-position: 3px -1157px;
+	margin-top: 200px;
+	font-family: "kaiti";
+}
+
+.scene-words>span,
+.figure-words>span {
+	display: block;
+	text-align: left;
+	font-family: "kaiti";
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin: 15px 0 0 0;
+	padding: 0 0 0 60px;
+	position: relative;
+}
+
+.scene-words>span {
+	color: #FFFFFF;
+}
+
+.figure-words>span {
+	color: #5f5f5f;
+}
+
+.scene-words b,
+.figure-words b {
+	width: 60px;
+	height: 20px;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.scene-tab,
+.scene-player {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.scene-tab,
+.scene-tab>a {
+	width: 150px;
+	height: 150px;
+}
+
+.scene-tab {
+	z-index: 1;
+}
+
+.scene-tab a {
+	display: block;
+	text-align: center;
+	line-height: 150px;
+	color: #FFFFFF;
+	font-size: 30px;
+	cursor: default;
+	z-index: 2;
+}
+
+.scene .tab1 {
+	margin: -105px 0 0 -94px;
+}
+
+.scene .tab2 {
+	margin: 2px 0 0 13px;
+}
+
+.scene-tab>em,
+.school-tab>em {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #87a1b9;
+	margin: -5px 0 0 -73px;
+	z-index: 1;
+	transform: rotateZ(45deg);
+}
+
+.eng {
+	font-family: verdana;
+	opacity: .3;
+	display: block;
+	line-height: 100%;
+	margin: -50px 0 0;
+	font-size: 10px;
+	color: #202020;
+	display: block;
+	line-height: 100%;
+	margin: -50px 0 0;
+	font-size: 10px;
+	color: #202020;
+}
+
+.scene-player {
+	width: 190px;
+	height: 190px;
+	margin: 95px 0 0 133px;
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	z-index: 2;
+	background: #2fc3a3;
+	overflow: hidden;
+}
+
+.scene-player>.player-logo {
+	-webkit-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
+	margin: -40px 0 0 -23px;
+}
+
+.player-logo {
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-left: 3px solid #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.player-logo:before {
+	border-top: 3px solid #fff;
+	top: 0;
+	transform-origin: 0 0;
+	transform: rotateZ(29deg);
+}
+
+.player-logo:after {
+	border-bottom: 3px solid #fff;
+	bottom: 0;
+	transform-origin: 0 100%;
+	transform: rotateZ(-29deg);
+}
+
+.player-logo:before,
+.player-logo:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+}
+
+.played {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+/*第三部分*/
+
+.figure {
+	background-color: #e7e7e7;
+	background-image: url(../images/gameFeatureImgs/bg-3.jpg);
+}
+
+.figure-h2,
+.school-h2 {
+	width: 338px;
+	height: 82px;
+	position: absolute;
+	left: 0;
+}
+
+.figure-h2 {
+	top: 60px;
+	background-position: -280px -90px;
+}
+
+.figure-subhead {
+	position: absolute;
+	left: 0;
+	top: 150px;
+	letter-spacing: 1px;
+	font-size: 14px;
+	margin: 0 0 5px 5px;
+}
+
+.figure-words {
+	width: 340px;
+	height: 175px;
+	background-position: -825px -1103px;
+	position: absolute;
+	top: 175px;
+	left: 0;
+}
+
+.figure-face {
+	width: 346px;
+	height: 182px;
+	position: absolute;
+	top: 370px;
+	left: 0;
+}
+
+.figure-h3 {
+	font-family: "kaiti";
+	width: 100%;
+	height: 34px;
+	color: #292929;
+	font-size: 26px;
+	line-height: 34px;
+	font-weight: normal;
+	text-align: left;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.face-list {
+	margin-top: 10px;
+	height: 140px;
+}
+
+.face-list>li {
+	float: left;
+	margin: 0 10px 10px 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.face-list img,
+.face-list li {
+	width: 64px;
+	height: 64px;
+	display: block;
+}
+
+.face-list img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .2s ease 0s;
+}
+
+.face-list img:hover {
+	transform: scale(2, 2);
+	z-index: 1;
+}
+
+.figure-bigerImg {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	background-image: url(../images/gameFeatureImgs/face.png);
+	background-repeat: no-repeat;
+	z-index: 1;
+	width: 533px;
+	height: 712px;
+}
+
+.figure-player,
+.ally-player {
+	display: block;
+	position: absolute;
+	top: 480px;
+	right: 465px;
+	z-index: 100;
+	width: 96px;
+	text-align: center;
+	line-height: 96px;
+	height: 96px;
+	background-color: #2FC3A3;
+	border-radius: 50px;
+}
+
+.figure-player>.player-logo,
+.story-player>.player-logo,
+.ally-player>.player-logo {
+	margin: -30px -20px;
+}
+
+
+/*第四部分*/
+
+.story {
+	background-color: #000;
+	background-image: url(../images/gameFeatureImgs/bg-4.jpg);
+}
+
+.parts-left,
+.parts-right {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.story-player {
+	width: 122px;
+	height: 122px;
+	position: absolute;
+	border-radius: 50%;
+	border: 3px solid #b5b5b5;
+}
+
+.left-player {
+	top: 100px;
+	left: 110px;
+}
+
+.right-player {
+	top: 360px;
+	right: 150px;
+}
+
+.story-h2 {
+	width: 338px;
+	height: 56px;
+	position: absolute;
+}
+
+.h2-left {
+	top: 250px;
+	left: 10px;
+	background-position: -270px -196px;
+}
+
+.h2-right {
+	top: 100px;
+	right: 80px;
+	background-position: -270px -270px;
+}
+
+.story-p {
+	width: 338px;
+	position: absolute;
+	color: #b7bbba;
+	letter-spacing: 1px;
+	font-size: 14px;
+	text-align: left;
+}
+
+.p-left {
+	top: 340px;
+	left: 40px;
+}
+
+.p-right {
+	top: 200px;
+	right: 0;
+}
+
+
+/*第五部分*/
+
+.fighting {
+	background-color: #33363d;
+	background-image: url(../images/gameFeatureImgs/bg-5.jpg);
+}
+
+.fighting-line {
+	width: 100%;
+	height: 0;
+	border-top: 1px dotted #7a8084;
+	position: absolute;
+	top: 470px;
+	left: 0;
+}
+
+.fighting-h2 {
+	width: 100%;
+	height: 78px;
+	background-position: 45px -375px;
+}
+
+.fighting-video,
+.fighting-video>a,
+.fighting-video>a>img {
+	width: 520px;
+	height: 288px;
+	display: block;
+}
+
+.fighting-video {
+	margin: 20px 0 0 240px;
+}
+
+.fighting-tab {
+	width: 100%;
+	margin-top: 44px;
+}
+
+.fighting-tab li {
+	width: 166px;
+	text-align: center;
+	height: 214px;
+	float: left;
+}
+
+.fighting-tab .tab-a {
+	width: 100%;
+	height: 54px;
+	display: block;
+	text-align: center;
+}
+
+.fighting-tab .tab-em {
+	position: relative;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .5);
+	margin: 0 0 0 70px;
+	z-index: 2;
+}
+
+.fighting-tab .tab-em:before,
+.fighting-tab .tab-em:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.fighting-tab .tab-em:before {
+	visibility: hidden;
+	width: 30px;
+	height: 30px;
+	background: rgba(255, 255, 255, .2);
+	top: 50%;
+	left: 50%;
+	margin: -15px -15px;
+	z-index: 1;
+}
+
+.fighting-tab .tab-em:after {
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -7px -7px;
+	background: rgba(255, 255, 255, 1);
+	z-index: 3;
+}
+
+.tab-em.cur:after {
+	background: rgba(47, 195, 163, 1)
+}
+
+.tab-em.cur:before {
+	visibility: visible;
+}
+
+.fighting-tab .tab-b {
+	width: 100%;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	display: block;
+	margin: 10px auto;
+	font-family: "kaiti";
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: normal;
+}
+
+.fighting-tab .tab-p {
+	width: 100%;
+	color: #999e9d;
+	display: none;
+	text-indent: 1em;
+	text-align: left;
+	font-size: 12px;
+	padding: 5%;
+	background: url(../images/gameFeatureImgs/ic.png) no-repeat 8px 11px;
+}
+
+.tab-p.current {
+	display: block;
+}
+
+
+/*第六部分*/
+
+.school {
+	background-color: #f3f4f8;
+	background-image: url(../images/gameFeatureImgs/bg-6.jpg);
+}
+
+.school-h2 {
+	top: 30;
+	background-position: -280px -510px;
+}
+
+.school-subhead {
+	position: absolute;
+	top: 150px;
+	left: 0;
+	color: #292929;
+	text-align: left;
+	letter-spacing: 1px;
+	margin: 0 0 0 10px;
+}
+
+.school-words {
+	width: 340px;
+	height: 130px;
+	position: absolute;
+	top: 180px;
+	left: 10px;
+	background-position: -825px -1103px;
+	color: #5F5F5F;
+}
+
+.school-words>span {
+	display: block;
+	padding: 8px 0 0 60px;
+	font-family: "kaiti";
+	text-align: left;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.school-imgs {
+	width: 620px;
+	height: 907px;
+	position: absolute;
+	top: -130px;
+	right: 0;
+	background: url(../images/gameFeatureImgs/bg-role.png) no-repeat 50% 100%;
+	overflow: hidden;
+}
+
+.school-imgs-list {
+	width: 839px;
+	position: absolute;
+	top: 0;
+	right: -215px;
+}
+
+.school-imgs-list li {
+	width: 839px;
+	height: 907px;
+	float: left;
+}
+
+.school-tab {
+	width: 120px;
+	height: 120px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	line-height: 120px;
+}
+
+.school-tab>em,
+.identity-tab>em {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 1px solid #87a1b9;
+	z-index: 1;
+	transform: rotateZ(45deg);
+}
+
+.school .school-tab>em {
+	margin: -60px 0 0 -60px;
+}
+
+.school .school-tab:hover em,
+.identity .identity-tab:hover em {
+	background-color: #2FC3A3;
+	border-color: #2FC3A3;
+}
+
+.school-tab>a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 75px;
+	height: 80px;
+	margin: -40px 0 0 -38px;
+	z-index: 5;
+}
+
+.school .tab1 {
+	margin: 20px 0 0 -500px;
+}
+
+.school .tab2 {
+	margin: 200px 0 0 -500px;
+}
+
+.school .tab3 {
+	margin: 20px 0 0 -320px;
+}
+
+.school .tab4 {
+	margin: 110px 0 0 -410px;
+}
+
+.school .tab5 {
+	margin: 200px 0 0 -320px;
+}
+
+.school .tab6 {
+	margin: 110px 0 0 -230px;
+}
+
+.school .tab7 {
+	margin: 200px 0 0 -140px;
+}
+
+.school .tab1>a {
+	background-position: 0 -655px;
+}
+
+.school .tab2>a {
+	background-position: 0px -820px;
+}
+
+.school .tab3>a {
+	background-position: -165px -655px;
+}
+
+.school .tab4>a {
+	background-position: -80px -740px;
+}
+
+.school .tab5>a {
+	background-position: -168px -820px;
+}
+
+.school .tab6>a {
+	background-position: -245px -740px;
+}
+
+.school .tab7>a {
+	background-position: -330px -820px;
+}
+
+.cur>em {
+	background-color: #2FC3A3;
+	border-color: #2FC3A3;
+}
+
+
+/*第七部分*/
+
+.ally {
+	background-color: #08090e;
+	background-image: url(../images/gameFeatureImgs/bg-7.jpg);
+}
+
+.ally-h2 {
+	width: 100%;
+	height: 80px;
+	background-position: 45px -657px;
+}
+
+.ally-tab {
+	width: 100%;
+	height: 515px;
+	overflow: hidden;
+}
+
+.ally .tab-li {
+	width: 245px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+/*.ally-tab .li1:hover {
+	background: url(../images/gameFeatureImgs/utd.png) no-repeat;
+	background-position: -23px 33px;
+}
+
+.ally-tab .li2:hover {
+	background: url(../images/gameFeatureImgs/utd.png) no-repeat;
+	background-position: -268px 33px;
+}
+
+.ally-tab .li3:hover {
+	background: url(../images/gameFeatureImgs/utd.png) no-repeat;
+	background-position: -510px 33px;
+}
+
+.ally-tab .li4:hover {
+	background: url(../images/gameFeatureImgs/utd.png) no-repeat;
+	background-position: -757px 33px;
+}
+*/
+.ally .tab-li>a {
+	width: 144px;
+	height: 144px;
+	position: absolute;
+	left: 50px;
+	bottom: -144px;
+	transition: all .2s ease 0s;
+	z-index: 5;
+}
+
+.ally .tab-li>a {
+	background-image: url(../images/gameFeatureImgs/utd.png);
+	background-repeat: no-repeat;
+}
+
+.ally .li1>a {
+	background-position: -46px -556px;
+}
+
+.ally .li2>a {
+	background-position: -315px -556px;
+}
+
+.ally .li3>a {
+	background-position: -592px -556px;
+}
+
+.ally .li4>a {
+	background-position: -861px -556px;
+}
+
+
+/*第八部分*/
+
+.identity {
+	background-color: #070707;
+	background-image: url(../images/gameFeatureImgs/bg-8.jpg);
+}
+
+.identity-h2 {
+	width: 100%;
+	height: 80px;
+	background-position: 45px -780px;
+}
+
+.identity-img-con {
+	width: 359px;
+	height: 724px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -244px 0 0 -80px;
+	overflow: hidden;
+}
+
+.identity-img-list {
+	width: 359px;
+	z-index: 1;
+	width: 100%;
+	height: 724px;
+	float: left;
+}
+
+.identity-tab {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.identity-tab>em {
+	margin: -50px 0 0 -50px;
+	z-index: 5;
+}
+
+.identity-tab>a {
+	width: 65px;
+	height: 70px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -35px 0 0 -30px;
+	z-index: 10;
+}
+
+#identity-btn .tab1 {
+	margin: -275px 0 0 -415px;
+}
+
+#identity-btn .tab2 {
+	margin: -200px 0 0 -340px
+}
+
+#identity-btn .tab3 {
+	margin: -125px 0 0 -265px;
+}
+
+#identity-btn .tab4 {
+	margin: -50px 0 0 -190px;
+}
+
+#identity-btn .tab5 {
+	margin: 25px 0 0 -265px;
+}
+
+#identity-btn .tab6 {
+	margin: -50px 0 0 -340px
+}
+
+#identity-btn .tab7 {
+	margin: -125px 0 0 -415px;
+}
+
+#identity-btn .tab8 {
+	margin: 100px 0 0 -340px;
+}
+
+#identity-btn .tab9 {
+	margin: 25px 0 0 -415px;
+}
+
+#identity-btn .tab10 {
+	margin: 175px 0 0 -415px;
+}
+
+#identity-btn .tab1>a {
+	background-position: -455px -103px;
+}
+
+#identity-btn .tab2>a {
+	background-position: -525px -170px;
+}
+
+#identity-btn .tab3>a {
+	background-position: -590px -240px;
+}
+
+#identity-btn .tab4>a {
+	background-position: -655px -305px;
+}
+
+#identity-btn .tab5>a {
+	background-position: -590px -375px;
+}
+
+#identity-btn .tab6>a {
+	background-position: -525px -305px;
+}
+
+#identity-btn .tab7>a {
+	background-position: -455px -240px;
+}
+
+#identity-btn .tab8>a {
+	background-position: -525px -305px;
+}
+
+#identity-btn .tab9>a {
+	background-position: -525px -440px;
+}
+
+#identity-btn .tab10>a {
+	background-position: -590px -505px;
+}
+
+.identity-ifo {
+	width: 250px;
+	height: 128px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10000;
+	margin: -65px 0 0 170px;
+	overflow: hidden;
+}
+
+.identity-ifo h3,
+.identity-ifo a,
+.identity-ifo p {
+	color: #2FC3A3;
+	width: 100%;
+	display: block;
+	font-family: "kaiti";
+	text-align: left;
+}
+
+.identity-ifo h3 {
+	height: 39px;
+	font-size: 26px;
+}
+
+.identity-ifo p {
+	color: #c6c6c5;
+	height: 70px;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+.identity-ifo a {
+	height: 21px;
+	font-size: 14px;
+}
+
+
+/*动态导航*/
+
+.parts-navs {
+	position: absolute;
+}
+
+
+/*二维码区域*/
+
+.nav-right {
+	width: 130px;
+	height: 202px;
+	position: fixed;
+	top: 50%;
+	left: 30px;
+	margin-top: -101px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	z-index: 100000;
+}
+
+.nav-right>span {
+	display: block;
+}
+
+.nav-right img {
+	width: 130px;
+	height: 130px;
+	display: block;
+}
+
+.enter-game,
+.down-game,
+.enter-game>a,
+.down-game>a {
+	width: 130px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	color: #FFFFFF;
+	font-size: 13px;
+	display: block;
+}
+
+.enter-game>a {
+	background-color: #2FC3A3;
+}
+
+.down-game>a {
+	background-color: #CFAE69;
+}

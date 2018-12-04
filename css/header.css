@@ -1,0 +1,432 @@
+/* 头部开始 */
+.header {
+  width: 100%;
+  color: #464646;
+  border: 1px solid #c9c9c9;
+  border-right: 0;
+  border-left: 0;
+  background-repeat: repeat-x;
+  height: 40px;
+  background: #fff url(../img/ost-bg.png) no-repeat;
+  position: relative;
+}
+
+.headernav {
+  width: 1000px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.headernav li {
+  float: left;
+  height: 40px;
+}
+
+.head_logo {
+  width: 205px;
+  padding-right: 15px;
+  background: url(../img/ost-bg.png) no-repeat;
+  background-position: 0 -40px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 11;
+}
+
+.headernav li:last-child {
+  float: right;
+}
+
+.headernav li:last-child i {
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: url(../img/inco.png) no-repeat;
+}
+
+.headernav li:last-child a {
+  margin-right: 25px;
+}
+
+.headernav li:last-child a:hover {
+  color: orange;
+}
+
+.ost_big {
+  display: none;
+  width: 970px;
+  height: 185px;
+  padding: 0 3px 3px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -488px;
+  z-index: 10;
+}
+
+.banner {
+  width: 100%;
+  height: 1125px;
+  overflow: hidden;
+  background: url(../img/banner.jpg) center no-repeat;
+}
+
+/* banner头部导航 */
+.bannerTop {
+  width: 1167px;
+  height: 74px;
+  /* background: red; */
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 16px;
+  margin-right: 76px;
+}
+
+.topNav li {
+  float: left;
+  margin: 25px 18px;
+}
+
+.topNav li a {
+  font-size: 25px;
+  font-family: '方正舒体';
+  /* 华文新魏	 */
+}
+
+/* 视频播放 */
+.videoBp {
+  position: absolute;
+  top: 279px;
+  left: 482px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: #000;
+  opacity: .2;
+}
+
+.shipin {
+  display: none;
+  width: 833px;
+  height: 500px;
+  position: fixed;
+  top: 70px;
+  left: 200px;
+  z-index: 999;
+}
+
+.bofang {
+  width: 833px;
+  height: 500px;
+  position: relative;
+}
+
+.bofang video {
+  width: 100%;
+}
+
+
+/* banner导航 */
+
+.bannerNav {
+  height: 140px;
+  margin-top: 378px;
+}
+
+
+
+.bannerNav a {
+  width: 195px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  margin-top: 63px;
+  color: rgb(0, 0, 0, 0);
+  display: inline-block;
+  /* background: skyblue; */
+}
+
+.bannerNav a:first-child {
+  margin-left: 300px;
+}
+
+.bannerNav a:last-child {
+  margin-left: 4px;
+
+}
+
+.lunbo {
+  height: 280px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.lunbo .zhianshi>li {
+  width: 312px;
+  height: 280px;
+  float: left;
+  margin-right: 31px;
+}
+
+.lunbo .zhianshi>li:last-child {
+  margin-right: 0;
+}
+
+.index_y {
+  width: 312px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.index_y .lb_tp {
+  width: 1248px;
+  position: absolute;
+  top: 0;
+}
+
+.index_y .lb_tp li {
+  position: relative;
+  float: left;
+}
+
+.yuandian {
+  /* width: 60px;
+  height: 10px; */
+  position: absolute;
+  right: 45px;
+  bottom: 10px;
+}
+
+.yuandian span {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  display: block;
+  border-radius: 50%;
+  float: left;
+  background: #666;
+  opacity: 0.7;
+
+}
+
+.yuandian span.lb_active {
+  width: 20px;
+  height: 10px;
+  display: block;
+  border-radius: 40%;
+  background: rgb(14, 100, 57);
+
+}
+
+.otherlists {
+  margin-top: 35px;
+}
+
+.otherlists li {
+  position: relative;
+  width: 226px;
+  height: 105px;
+  float: left;
+  background-color: #1c1c1c;
+  margin: 0 22px 0 0;
+}
+
+.public {
+  padding: 15px 25px 0;
+}
+
+.public strong {
+  display: block;
+  font-size: 22px;
+  color: #cfae69;
+  font-weight: bold;
+  line-height: 136%;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+.public em {
+  display: block;
+  font-size: 13px;
+  color: #aaa;
+  line-height: 115%;
+}
+
+.public .addTb {
+  top: 65px;
+  left: 25px;
+  width: 17px;
+  height: 17px;
+  background-position: 100% -257px;
+  position: absolute;
+  background: url(../img/inco-1.png) no-repeat right -258px;
+}
+
+.public .incoTb {
+  top: 32px;
+  left: 159px;
+  width: 41px;
+  height: 40px;
+  position: absolute;
+}
+
+.public .inc1 {
+  background: url(../img/inco-1.png) no-repeat left -345px;
+}
+
+.public .inc2 {
+  background: url(../img/inco-1.png) no-repeat -256px -345px;
+}
+
+.public .inc3 {
+  background: url(../img/inco-1.png) no-repeat -511px -345px;
+}
+
+.public .inc4 {
+  background: url(../img/inco-1.png) no-repeat -767px -345px;
+}
+
+
+.otherlists span {
+  width: 226px;
+  height: 10px;
+  background: #cfae69;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.otherlists span.hengxian {
+  display: block;
+}
+
+/* 礼物 */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.mask {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  display: none;
+  z-index: 999;
+}
+
+.liwu {
+  display: none;
+  position: fixed;
+  top: 40px;
+  left: 278px;
+  width: 760px;
+  height: 550px;
+  margin: 0 auto;
+  z-index: 9999;
+  background: #fff;
+}
+
+.close {
+  font-size: 50px;
+  font-family: '黑体';
+  color: #fff;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  right: -48px;
+}
+
+.liwuNav {
+  height: 50px;
+  width: 760px;
+}
+
+.liwuNav li {
+  float: left;
+  width: 190px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  background: #1c1c1c;
+  color: #666;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+
+.products {
+  position: relative;
+  width: 760px;
+  height: 500px;
+}
+
+.products .main {
+  float: left;
+  display: none;
+}
+
+.products img {
+  width: 760px;
+  height: 500px;
+}
+
+.products .main.selected {
+  display: block;
+}
+
+.liwuNav li.active,
+.xiazaiNav li.active {
+  background: #2fc3a3;
+  color: #fff;
+}
+
+/* 游戏下载 */
+.xiazai {
+  display: none;
+  position: fixed;
+  top: 40px;
+  left: 278px;
+  width: 760px;
+  height: 550px;
+  margin: 0 auto;
+  z-index: 9999;
+  background: #fff;
+}
+
+.xiazaiNav {
+  height: 50px;
+  width: 760px;
+}
+
+.xiazaiNav li {
+  float: left;
+  width: 380px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  background: #1c1c1c;
+  color: #666;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
